@@ -1,0 +1,101 @@
+:root {
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+  --transparent-white-para: hsla(0, 0%, 100%, 0.75);
+  --very-light-gray: hsl(0, 0%, 95%);
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  font: inherit;
+}
+img,
+a {
+  display: inline-block;
+}
+body {
+  font-size: 16px;
+  background-color: var(--very-light-gray);
+
+  font-family: "Lexend Deca", sans-serif;
+  padding: 5.5rem 1.5rem;
+
+  font-style: normal;
+  font-weight: 400;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+.cards__container {
+  border-radius: 0.5em;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  max-width: 21rem;
+}
+.card {
+  width: 100%;
+  background-color: var(--primary-color);
+  padding: 3rem;
+  font-size: 0.9375rem;
+}
+.card__sedans {
+  --primary-color: var(--bright-orange);
+}
+.card__suvs {
+  --primary-color: var(--dark-cyan);
+}
+.card__luxury {
+  --primary-color: var(--very-dark-cyan);
+}
+
+.card__logo {
+  width: 4rem;
+  margin-bottom: 2.1875rem;
+}
+.card__title {
+  color: var(--very-light-gray);
+  text-transform: uppercase;
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1;
+}
+.card__text {
+  color: var(--transparent-white-para);
+  margin-block: 1.5625rem;
+  line-height: 1.5625rem;
+}
+
+.card__cta {
+  background-color: var(--very-light-gray);
+  padding: 0.75rem 1.96875rem;
+  color: var(--primary-color);
+
+  border-radius: 1.5625rem;
+  line-height: 1.5625rem;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+.card__cta:hover,
+.card__cta:focus {
+  border-color: #fff;
+  background-color: transparent;
+  color: #fff;
+}
+
+@media (min-width: 700px) {
+  .cards__container {
+    flex-direction: row;
+    max-width: 57.5rem;
+  }
+}
