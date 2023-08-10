@@ -99,4 +99,7 @@ body {
   body {
     padding-block: 10.6875rem;
   }
+  .card__text {
+    margin-bottom: 5.1875rem;
+  }
 }
