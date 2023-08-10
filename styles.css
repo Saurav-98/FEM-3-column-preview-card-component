@@ -91,7 +91,7 @@ body {
   color: #fff;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 950px) {
   .cards__container {
     flex-direction: row;
     max-width: 57.5rem;
