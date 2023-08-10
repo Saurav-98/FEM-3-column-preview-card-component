@@ -21,7 +21,6 @@ a {
   display: inline-block;
 }
 body {
-  font-size: 16px;
   background-color: var(--very-light-gray);
 
   font-family: "Lexend Deca", sans-serif;
@@ -31,7 +30,6 @@ body {
   font-weight: 400;
   display: grid;
   place-items: center;
-  height: 100vh;
 }
 
 .cards__container {
@@ -97,5 +95,8 @@ body {
   .cards__container {
     flex-direction: row;
     max-width: 57.5rem;
+  }
+  body {
+    padding-block: 10.6875rem;
   }
 }
